@@ -356,8 +356,29 @@ console.log('------ MORE Operators - typeof() ----------');
 	} else {
 		// statements2
 	};	
-
+	
 */
+
+var car = "Sports";
+	
+	switch(car){
+	case "Maybach":
+	console.log("A " + car + " costs over $168,000.");
+	break;
+	
+	case "Wraith":
+	console.log("A Rolls-Royce " + car + " costs $294,025.");
+	break;
+	
+	case "Luxury":
+	case "Sports":
+	console.log("Luxury and sport cars are among the most expensive of cars.");
+	break
+	
+	default:
+	console.log("The " + car + " is my favorite line of cars.");
+	};
+
 
 console.log('------ MORE Conditionals - Switch ----------');
 
@@ -370,6 +391,24 @@ console.log('------ MORE Conditionals - Switch ----------');
 			if age 18 then console.log "adult"
 			if no age then console.log "No answer"
 ********************************************/
+
+var age = "18";
+
+switch(age){
+	case "13":
+	console.log("Child");
+	break;
+	
+	case "18":
+	console.log("Adult");
+	break;
+	
+	case "":
+	console.log("No answer");
+	
+	default:
+	console.log("Please enter either 13 or 18 as an age.");
+};
 
 
 
@@ -547,8 +586,8 @@ console.log('------For Loop ----------');
 
     console.log('------ More PRACTICE ----------');
 
-    var name = 'This is a nice change of pace';
+   var name = 'This is a nice change of pace';
 
 
 
-})();
+})(); 
