@@ -11,7 +11,7 @@
 	var validqte = function(query){
 		
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) === " "){
+		while(query.charAt(0) = " "){
 			query = query.substring(1, query.length);
 		};
 		while(query.charAt(query.length-1) === ""){
@@ -24,7 +24,7 @@
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
-			return;
+			return ;
 		};
 		
 		search(query);
@@ -57,13 +57,14 @@
 				var compare = dbitem.indexOf(qitem);
 				if(compare !== -1){
 					results.push(db[i]);
-				}
-			};
+				};
+			;
+		;
 		
 		results.sort();
 		
 		// Check that matches were found, and run output functions
-		if(results.length === 0){
+		if(results.length = 0){
 			noMatch();
 		}else{
 			showMatches(results);
@@ -114,6 +115,5 @@
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
 		return false;
-	
-
+		
 })();
