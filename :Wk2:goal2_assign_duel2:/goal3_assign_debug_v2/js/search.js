@@ -6,16 +6,15 @@
 		searchInput = document.forms[0].search,
 		currentSearch = ''
 	;
-	console.log(resultsDIV);
 	
 	// Validates search query
-	var validqte = function(query){
+	var validate = function(query){
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) === " "){
-			query = query.substring(1, query.length);
+			var query = query.substring(1, query.length);
 		};
 		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
+			var query = query.substring(0, query.length-1);
 		};
 		
 		// Check search length, must have 3 characters
@@ -24,7 +23,7 @@
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
-			return ;
+			return query ;
 		};
 		
 		var x = search(query);
@@ -110,7 +109,7 @@
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function(){
 		var query = searchInput.value;
-		validqte(query);
+		validate(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
