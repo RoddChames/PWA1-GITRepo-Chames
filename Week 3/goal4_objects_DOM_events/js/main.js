@@ -44,6 +44,14 @@ console.log("I have a " + bike.make + " " + bike.model + " " + bike.year + ".");
 
      - also keep in mind that since the keys can be strings, you could access the keys using string variables
  */
+ 
+ var bike = {make: 'suzuki', model: 'gsxr', year: '2009'};
+ 
+ var bikeTwo = make;
+ 
+ console.log("I have a " + bikeTwo +".");
+
+ 
 
 
 // setter
